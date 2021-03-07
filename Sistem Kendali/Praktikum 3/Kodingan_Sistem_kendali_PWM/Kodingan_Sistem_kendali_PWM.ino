@@ -1,3 +1,6 @@
+// Ramah Rinaldi Ruslan (6702190006)
+// Muhammad Rifki Ferdiansyah  (6702194022)
+
 int p=10;
 int p1=9;
 int p2=6;

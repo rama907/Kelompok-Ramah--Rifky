@@ -36,3 +36,39 @@ pinMode (m7,INPUT);
 pinMode (m8,INPUT);
 
 }
+
+void loop() {
+  if (digitalRead(m1)==1 && digitalRead(m2)==1){
+      analogWrite(p,123); // belok kiri
+      
+  }
+  else if (digitalRead(m2)==1 && digitalRead(m3)==1 ){
+      analogWrite(p,123); // belok kiri
+      analogWrite(p3,62); // kanan
+  }
+   else if (digitalRead(m3)==1 && digitalRead(m4)==1){
+      analogWrite(p,123); // belok kiri
+      analogWrite(p3,100); // kanan
+  }
+  else if (digitalRead(m4)==1 && digitalRead(m5)==1 ){
+      analogWrite(p,150); // belok kiri
+      analogWrite(p3,150); // kanan
+  }
+  else if (digitalRead(m5)==1 && digitalRead(m6)==1 ){
+      analogWrite(p,100); // belok kiri
+      analogWrite(p3,123); // kanan
+  }
+  else if (digitalRead(m6)==1 && digitalRead(m7)==1 ){
+      analogWrite(p,62); // belok kiri
+      analogWrite(p3,123); // kanan
+  }
+  else if (digitalRead(m7)==1 && digitalRead(m8)==1 ){
+      analogWrite(p3,123); // kanan
+  }
+  else{
+  digitalWrite(p,LOW);
+  digitalWrite(p1,LOW);
+  digitalWrite(p2,LOW);
+  digitalWrite(p3,LOW);
+  }
+}
